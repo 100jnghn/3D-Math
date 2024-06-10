@@ -610,8 +610,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: -27.7}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -5.25, y: -19.199997}
+  m_SizeDelta: {x: 199.5, y: 33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &149662873
 MonoBehaviour:
@@ -4017,6 +4017,7 @@ MonoBehaviour:
   xInputField: {fileID: 477897867}
   yInputField: {fileID: 1641266808}
   zInputField: {fileID: 716688324}
+  selectedDot: {fileID: 0}
 --- !u!4 &1185358331
 Transform:
   m_ObjectHideFlags: 0
