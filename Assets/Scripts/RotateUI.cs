@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class RotateUI : MonoBehaviour
 {
-    public Camera cam;
+    private Camera cam;
 
     void Start()
     {
-        
+        cam = Camera.main;
     }
 
     void Update()
