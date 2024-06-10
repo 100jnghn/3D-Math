@@ -16,7 +16,8 @@ public class DotManager : MonoBehaviour
     public TMP_InputField yInputField;
     public TMP_InputField zInputField;
 
-    private GameObject selectedDot;
+    [HideInInspector]
+    public GameObject selectedDot;
 
     void Start()
     {
@@ -31,9 +32,14 @@ public class DotManager : MonoBehaviour
     // Add Point 버튼 눌렀을 때 -> 원점에 dot 생성, UI 변경
     public void createDot()
     {
+        changeUI();
+        selectedDot = Instantiate(dotPrefab, transform.position, dotPrefab.transform.rotation);
+    }
+
+    public void changeUI()
+    {
         addPointButton.SetActive(false);
         pointInputPanel.SetActive(true);
-        selectedDot = Instantiate(dotPrefab, transform.position, dotPrefab.transform.rotation);
     }
 
     // Input Point 버튼 눌렀을 때 -> 점 이름 & pos 이동
@@ -43,9 +49,9 @@ public class DotManager : MonoBehaviour
         if (nameInputField != null && xInputField!= null &&yInputField!=null && zInputField!=null   )
         {
             string name = nameInputField.text;
-            int x = Convert.ToInt32(xInputField.text);
-            int y = Convert.ToInt32(yInputField.text);
-            int z = Convert.ToInt32(zInputField.text);
+            float x = Mathf.Round(Convert.ToSingle(xInputField.text) * 10f) / 10f;
+            float y = Mathf.Round(Convert.ToSingle(yInputField.text) * 10f) / 10f;
+            float z = Mathf.Round(Convert.ToSingle(zInputField.text) * 10f) / 10f;
 
             selectedDot.GetComponent<DotController>().setName(name);
             selectedDot.GetComponent<DotController>().setPosition(x, y, z);

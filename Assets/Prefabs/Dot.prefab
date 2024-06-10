@@ -114,7 +114,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 1.2}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 230, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7732538321137707120
 Canvas:
@@ -191,7 +191,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e432e4d239df09e40944d87bc740ebaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
 --- !u!1 &7029037489295239186
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +226,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 230, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5994924059535152615
 CanvasRenderer:
