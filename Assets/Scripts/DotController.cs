@@ -40,6 +40,7 @@ public class DotController : MonoBehaviour
         positionText.text = dotName + "(" + transform.position.x + " " + transform.position.y + " " + transform.position.z * -1 + ")";
     }
 
+    // 생성된 점을 터치했을 때 -> 이름, 위치 변경 가능
     void detectTouch()
     {
         // 터치가 하나 이상 발생
