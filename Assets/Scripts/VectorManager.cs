@@ -74,8 +74,8 @@ public class VectorManager : MonoBehaviour
 
         // 벡터 머리(화살표) 만들기
         Vector3 arrowPos = body.transform.GetChild(0).transform.position;
-        Quaternion arrowRot = rotation * Quaternion.Euler(90, 0, 0);
-        Instantiate(vecHeadPrefab, arrowPos, arrowRot);
+        GameObject head = Instantiate(vecHeadPrefab, arrowPos, rotation);
+        head.transform.SetParent(body.transform);
 
         // 다시 null로 초기화
         startDot = null;
