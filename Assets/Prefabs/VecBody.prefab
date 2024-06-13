@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4492729809498806089}
   m_Layer: 0
   m_Name: VecBody
-  m_TagString: Untagged
+  m_TagString: Vector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
