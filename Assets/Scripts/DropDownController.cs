@@ -1,0 +1,96 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
+public class DropDownController : MonoBehaviour
+{
+    private TMP_Dropdown dropdown;
+
+    public GameObject quizPanel;
+    public GameObject addPointPanel;
+    public GameObject pointInputPanel;
+    public GameObject vectorStartButton;
+    public GameObject vectorEndButton;
+    public GameObject deleteButton;
+
+    void Start()
+    {
+        dropdown = GetComponent<TMP_Dropdown>();
+        dropdown.onValueChanged.AddListener(OnDropDownEvent);
+    }
+
+    void Update()
+    {
+        
+    }
+
+    public void OnDropDownEvent(int index)
+    {
+        switch (index)
+        {
+            case 0: // Select Options
+                quizPanel.SetActive(false);
+                addPointPanel.SetActive(false);
+                pointInputPanel.SetActive(false);
+                vectorStartButton.SetActive(false);
+                vectorEndButton.SetActive(false);
+                deleteButton.SetActive(false);
+
+                break;
+
+            case 1: // Dot, Line, Surface
+                quizPanel.SetActive(false);
+                addPointPanel.SetActive(true);
+                pointInputPanel.SetActive(false);
+                vectorStartButton.SetActive(false);
+                vectorEndButton.SetActive(false);
+                deleteButton.SetActive(true);
+
+                break;
+
+            case 2: // 3D Polygon
+                quizPanel.SetActive(false);
+                addPointPanel.SetActive(false);
+                pointInputPanel.SetActive(false);
+                vectorStartButton.SetActive(false);
+                vectorEndButton.SetActive(false);
+                deleteButton.SetActive(false);
+
+                break;
+
+            case 3: // Vector
+                quizPanel.SetActive(false);
+                addPointPanel.SetActive(false);
+                pointInputPanel.SetActive(false);
+                vectorStartButton.SetActive(false);
+                vectorEndButton.SetActive(false);
+                deleteButton.SetActive(false);
+
+                break;
+
+            case 4: // Graphics
+                quizPanel.SetActive(false);
+                addPointPanel.SetActive(false);
+                pointInputPanel.SetActive(false);
+                vectorStartButton.SetActive(false);
+                vectorEndButton.SetActive(false);
+                deleteButton.SetActive(false);
+
+                break;
+
+            case 5: // Quiz
+                quizPanel.SetActive(true);
+                addPointPanel.SetActive(true);
+                pointInputPanel.SetActive(false);
+                vectorStartButton.SetActive(false);
+                vectorEndButton.SetActive(false);
+                deleteButton.SetActive(true);
+
+                break;
+
+            default:
+                break;
+        }
+    }
+}
