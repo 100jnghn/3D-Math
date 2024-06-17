@@ -1832,6 +1832,7 @@ MonoBehaviour:
   DownRotate: 0
   ClockwiseRotate: 0
   CounterClockwiseRotate: 0
+  pivotPoint: {fileID: 1844975267}
 --- !u!1 &982457740
 GameObject:
   m_ObjectHideFlags: 0

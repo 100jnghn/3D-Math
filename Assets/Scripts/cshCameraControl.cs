@@ -12,7 +12,6 @@ public class cshCameraControl : MonoBehaviour
     public bool BackMove = false;
 
 
-
     public bool LeftRotate = false;
     public bool RightRotate = false;
     public bool UpRotate = false;
@@ -20,80 +19,52 @@ public class cshCameraControl : MonoBehaviour
     public bool ClockwiseRotate = false;
     public bool CounterClockwiseRotate = false;
 
-    float moveSpeed = 5;
 
     float rotateSpeed = 50.0f;
+
+
+    public Transform pivotPoint;//원점 지정 예정
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        // pivotPoint를 지정하지 않았을 경우 기본으로 원점 사용
+        if (pivotPoint == null)
+        {
+            GameObject go = new GameObject("PivotPoint");
+            go.transform.position = Vector3.zero;
+            pivotPoint = go.transform;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        //이동
-        //Vector3 moveDirection = Vector3.zero;
-
-        //if (LeftMove)
-        //{
-        //    moveDirection += Vector3.left;
-        //}
-        //if (RightMove)
-        //{
-        //    moveDirection += Vector3.right;
-        //}
-        //if (UpMove)
-        //{
-        //    moveDirection += Vector3.up;
-        //}
-        //if (DownMove)
-        //{
-        //    moveDirection += Vector3.down;
-        //}
-        //if (FrontMove)
-        //{
-        //    moveDirection += Vector3.forward;
-        //}
-        //if (BackMove)
-        //{
-        //    moveDirection += Vector3.back;
-        //}
-
-        //transform.Translate(moveDirection * moveSpeed * Time.deltaTime, Space.World);
-
-
         //회전
-        Vector3 rotateDirection = Vector3.zero;
-
         if (LeftRotate)
         {
-            rotateDirection += Vector3.up;
+            transform.RotateAround(pivotPoint.position, Vector3.up, rotateSpeed * Time.deltaTime);
         }
         if (RightRotate)
         {
-            rotateDirection += Vector3.down;
+            transform.RotateAround(pivotPoint.position, Vector3.down, rotateSpeed * Time.deltaTime);
         }
         if (UpRotate)
         {
-            rotateDirection += Vector3.left;
+            transform.RotateAround(pivotPoint.position, Vector3.left, rotateSpeed * Time.deltaTime);
         }
         if (DownRotate)
         {
-            rotateDirection += Vector3.right;
+            transform.RotateAround(pivotPoint.position, Vector3.right, rotateSpeed * Time.deltaTime);
         }
         if (ClockwiseRotate)
         {
-            rotateDirection += Vector3.forward;
+            transform.RotateAround(pivotPoint.position, Vector3.forward, rotateSpeed * Time.deltaTime);
         }
         if (CounterClockwiseRotate)
         {
-            rotateDirection += Vector3.back;
+            transform.RotateAround(pivotPoint.position, Vector3.back, rotateSpeed * Time.deltaTime);
         }
-
-        transform.Rotate(rotateDirection * rotateSpeed * Time.deltaTime, Space.World);
-
     }
 }
