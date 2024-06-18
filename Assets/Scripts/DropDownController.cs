@@ -13,6 +13,7 @@ public class DropDownController : MonoBehaviour
     public GameObject vectorStartButton;
     public GameObject vectorEndButton;
     public GameObject deleteButton;
+    public GameObject polygonpanel;
 
     void Start()
     {
@@ -36,6 +37,7 @@ public class DropDownController : MonoBehaviour
                 vectorStartButton.SetActive(false);
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(false);
+                polygonpanel.SetActive(false);
 
                 break;
 
@@ -46,6 +48,7 @@ public class DropDownController : MonoBehaviour
                 vectorStartButton.SetActive(false);
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(true);
+                polygonpanel.SetActive(false);
 
                 break;
 
@@ -55,7 +58,8 @@ public class DropDownController : MonoBehaviour
                 pointInputPanel.SetActive(false);
                 vectorStartButton.SetActive(false);
                 vectorEndButton.SetActive(false);
-                deleteButton.SetActive(false);
+                deleteButton.SetActive(true);
+                polygonpanel.SetActive(true);
 
                 break;
 
@@ -66,6 +70,7 @@ public class DropDownController : MonoBehaviour
                 vectorStartButton.SetActive(false);
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(false);
+                polygonpanel.SetActive(false);
 
                 break;
 
@@ -76,6 +81,7 @@ public class DropDownController : MonoBehaviour
                 vectorStartButton.SetActive(false);
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(false);
+                polygonpanel.SetActive(false);
 
                 break;
 
@@ -86,6 +92,7 @@ public class DropDownController : MonoBehaviour
                 vectorStartButton.SetActive(false);
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(true);
+                polygonpanel.SetActive(false);
 
                 break;
 

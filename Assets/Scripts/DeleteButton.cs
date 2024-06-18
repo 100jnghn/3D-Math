@@ -35,7 +35,9 @@ public class DeleteButton : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit))
                 {
-                    if (hit.transform.gameObject.CompareTag("Dot") || hit.transform.gameObject.CompareTag("Vector"))
+                    if (hit.transform.gameObject.CompareTag("Dot") || 
+                        hit.transform.gameObject.CompareTag("Vector") ||
+                        hit.transform.gameObject.CompareTag("Polygon"))
                     {
                         Destroy(hit.transform.gameObject);
                         isBtnClicked = false;
