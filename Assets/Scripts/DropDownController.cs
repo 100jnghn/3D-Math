@@ -15,6 +15,10 @@ public class DropDownController : MonoBehaviour
     public GameObject deleteButton;
     public GameObject RotationPanel;
 
+    public Camera camera;
+
+   
+
     void Start()
     {
         dropdown = GetComponent<TMP_Dropdown>();
@@ -99,6 +103,14 @@ public class DropDownController : MonoBehaviour
             case 6: // Rotation_OnOff
        
                 RotationPanel.SetActive(true);
+                Projection();
+
+                quizPanel.SetActive(false);
+                addPointPanel.SetActive(false);
+                pointInputPanel.SetActive(false);
+                vectorStartButton.SetActive(false);
+                vectorEndButton.SetActive(false);
+                deleteButton.SetActive(false);
 
                 break;
 
@@ -106,4 +118,17 @@ public class DropDownController : MonoBehaviour
                 break;
         }
     }
+
+
+    public void Projection()
+    {
+        //카메라 위치
+        camera.transform.position = new Vector3(0, 0, -7);
+
+        //원점을 바라보도록.
+        camera.transform.LookAt(Vector3.zero);
+
+        camera.transform.up = Vector3.up;
+    }
+
 }

@@ -3863,6 +3863,8 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Quiz
       m_Image: {fileID: 0}
+    - m_Text: Rotation
+      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -3936,6 +3938,7 @@ MonoBehaviour:
   vectorEndButton: {fileID: 100811356}
   deleteButton: {fileID: 1756499734}
   RotationPanel: {fileID: 1088142992}
+  camera: {fileID: 963194227}
 --- !u!1 &825607261
 GameObject:
   m_ObjectHideFlags: 0
