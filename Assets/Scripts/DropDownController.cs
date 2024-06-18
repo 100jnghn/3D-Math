@@ -13,6 +13,7 @@ public class DropDownController : MonoBehaviour
     public GameObject vectorStartButton;
     public GameObject vectorEndButton;
     public GameObject deleteButton;
+    public GameObject RotationPanel;
 
     void Start()
     {
@@ -36,6 +37,7 @@ public class DropDownController : MonoBehaviour
                 vectorStartButton.SetActive(false);
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(false);
+                RotationPanel.SetActive(false);
 
                 break;
 
@@ -46,6 +48,7 @@ public class DropDownController : MonoBehaviour
                 vectorStartButton.SetActive(false);
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(true);
+                RotationPanel.SetActive(false);
 
                 break;
 
@@ -56,6 +59,7 @@ public class DropDownController : MonoBehaviour
                 vectorStartButton.SetActive(false);
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(false);
+                RotationPanel.SetActive(false);
 
                 break;
 
@@ -66,6 +70,7 @@ public class DropDownController : MonoBehaviour
                 vectorStartButton.SetActive(false);
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(false);
+                RotationPanel.SetActive(false);
 
                 break;
 
@@ -76,6 +81,7 @@ public class DropDownController : MonoBehaviour
                 vectorStartButton.SetActive(false);
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(false);
+                RotationPanel.SetActive(false);
 
                 break;
 
@@ -86,6 +92,13 @@ public class DropDownController : MonoBehaviour
                 vectorStartButton.SetActive(false);
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(true);
+                RotationPanel.SetActive(false);
+
+                break;
+
+            case 6: // Rotation_OnOff
+       
+                RotationPanel.SetActive(true);
 
                 break;
 
