@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Dot
   - Vector
+  - Polygon
   layers:
   - Default
   - TransparentFX

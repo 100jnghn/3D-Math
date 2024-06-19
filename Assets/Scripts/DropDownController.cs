@@ -17,7 +17,7 @@ public class DropDownController : MonoBehaviour
 
     public Camera camera;
 
-   
+
 
     void Start()
     {
@@ -27,7 +27,7 @@ public class DropDownController : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
     public void OnDropDownEvent(int index)
@@ -101,7 +101,7 @@ public class DropDownController : MonoBehaviour
                 break;
 
             case 6: // Rotation_OnOff
-       
+
                 RotationPanel.SetActive(true);
                 Projection();
 
@@ -122,10 +122,10 @@ public class DropDownController : MonoBehaviour
 
     public void Projection()
     {
-        //ì¹´ë©”ë¼ ìœ„ì¹˜
+        //Ä«¸Ş¶ó À§Ä¡
         camera.transform.position = new Vector3(0, 0, -7);
 
-        //ì›ì ì„ ë°”ë¼ë³´ë„ë¡.
+        //¿øÁ¡À» ¹Ù¶óº¸µµ·Ï.
         camera.transform.LookAt(Vector3.zero);
 
         camera.transform.up = Vector3.up;
