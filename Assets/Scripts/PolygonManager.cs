@@ -6,6 +6,7 @@ public class PolygonManager : MonoBehaviour
 {
     public GameObject cubePrefab;
     public GameObject cylinderPrefab;
+    public GameObject tetrahedronPrefab;
 
 
     private Vector3 randomPosition()
@@ -27,6 +28,12 @@ public class PolygonManager : MonoBehaviour
     {
         Vector3 randomPos = randomPosition();
         Instantiate(cylinderPrefab, randomPos, cylinderPrefab.transform.rotation);
+    }
+
+    public void createTetrahedron()
+    {
+        Vector3 randomPos = randomPosition();
+        Instantiate(tetrahedronPrefab, randomPos, tetrahedronPrefab.transform.rotation);
     }
 
 

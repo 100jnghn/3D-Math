@@ -54,7 +54,7 @@ public class DropDownController : MonoBehaviour
                 vectorStartButton.SetActive(false);
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(true);
-                RotationPanel.SetActive(false);
+                RotationPanel.SetActive(true);
                 polygonPanel.SetActive(false);
 
                 break;
@@ -66,12 +66,12 @@ public class DropDownController : MonoBehaviour
                 vectorStartButton.SetActive(false);
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(true);
-                RotationPanel.SetActive(false);
+                RotationPanel.SetActive(true);
                 polygonPanel.SetActive(true);
 
                 break;
 
-            case 3: // Vector
+           /* case 3: // Vector
                 quizPanel.SetActive(false);
                 addPointPanel.SetActive(false);
                 pointInputPanel.SetActive(false);
@@ -81,9 +81,9 @@ public class DropDownController : MonoBehaviour
                 RotationPanel.SetActive(false);
                 polygonPanel.SetActive(false);
 
-                break;
+                break;*/
 
-            case 4: // Graphics
+            case 3: // Graphics
                 quizPanel.SetActive(false);
                 addPointPanel.SetActive(false);
                 pointInputPanel.SetActive(false);
@@ -91,11 +91,13 @@ public class DropDownController : MonoBehaviour
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(false);
                 RotationPanel.SetActive(false);
+                Projection();
+
                 polygonPanel.SetActive(false);
 
                 break;
 
-            case 5: // Quiz
+            case 4: // Quiz
                 quizPanel.SetActive(true);
                 addPointPanel.SetActive(true);
                 pointInputPanel.SetActive(false);
@@ -107,10 +109,10 @@ public class DropDownController : MonoBehaviour
 
                 break;
 
-            case 6: // Rotation_OnOff
+            case 5: // Rotation_OnOff
 
                 RotationPanel.SetActive(true);
-                Projection();
+                //Projection();
 
                 quizPanel.SetActive(false);
                 addPointPanel.SetActive(false);
