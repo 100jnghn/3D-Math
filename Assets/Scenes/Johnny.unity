@@ -4125,7 +4125,9 @@ MonoBehaviour:
   vectorStartButton: {fileID: 337943853}
   vectorEndButton: {fileID: 100811356}
   deleteButton: {fileID: 1756499734}
-  polygonpanel: {fileID: 1723181946}
+  RotationPanel: {fileID: 0}
+  polygonPanel: {fileID: 0}
+  camera: {fileID: 0}
 --- !u!1 &825607261
 GameObject:
   m_ObjectHideFlags: 0
