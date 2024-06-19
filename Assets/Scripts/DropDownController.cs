@@ -14,6 +14,7 @@ public class DropDownController : MonoBehaviour
     public GameObject vectorEndButton;
     public GameObject deleteButton;
     public GameObject RotationPanel;
+    public GameObject polygonPanel;
 
     public Camera camera;
 
@@ -42,6 +43,7 @@ public class DropDownController : MonoBehaviour
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(false);
                 RotationPanel.SetActive(false);
+                polygonPanel.SetActive(false);
 
                 break;
 
@@ -53,6 +55,7 @@ public class DropDownController : MonoBehaviour
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(true);
                 RotationPanel.SetActive(false);
+                polygonPanel.SetActive(false);
 
                 break;
 
@@ -62,8 +65,9 @@ public class DropDownController : MonoBehaviour
                 pointInputPanel.SetActive(false);
                 vectorStartButton.SetActive(false);
                 vectorEndButton.SetActive(false);
-                deleteButton.SetActive(false);
+                deleteButton.SetActive(true);
                 RotationPanel.SetActive(false);
+                polygonPanel.SetActive(true);
 
                 break;
 
@@ -75,6 +79,7 @@ public class DropDownController : MonoBehaviour
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(false);
                 RotationPanel.SetActive(false);
+                polygonPanel.SetActive(false);
 
                 break;
 
@@ -86,6 +91,7 @@ public class DropDownController : MonoBehaviour
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(false);
                 RotationPanel.SetActive(false);
+                polygonPanel.SetActive(false);
 
                 break;
 
@@ -97,6 +103,7 @@ public class DropDownController : MonoBehaviour
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(true);
                 RotationPanel.SetActive(false);
+                polygonPanel.SetActive(false);
 
                 break;
 
@@ -111,6 +118,7 @@ public class DropDownController : MonoBehaviour
                 vectorStartButton.SetActive(false);
                 vectorEndButton.SetActive(false);
                 deleteButton.SetActive(false);
+                polygonPanel.SetActive(false);
 
                 break;
 
